@@ -1,0 +1,143 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif; /* Ensure a default font for better compatibility */
+}
+
+.bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgba(
+    46,
+    196,
+    182,
+    0.1
+  ); /* Adjusted background color and reduced opacity */
+}
+
+.form {
+  width: 80%;
+  max-width: 580px;
+  border-radius: 6px;
+  box-shadow: 0px 4px 50px 0px #0408131a;
+  background: #ffffff;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: 50px;
+}
+
+.form form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.form-group {
+  width: calc(50% - 5px); /* 50% width for each field with some gap */
+  margin-bottom: 10px;
+}
+
+.form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form input,
+.form select {
+  width: 100%;
+  height: 40px;
+}
+
+.form button {
+  width: 500px;
+  height: 48px;
+  align-content: center;
+  justify-content: center;
+  margin-left: 25px;
+  background: #2ec4b6;
+  box-shadow: 0px 10px 40px 0px #0000001a;
+  font-family: Sofia Pro;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  letter-spacing: 0.20000000298023224px;
+  text-align: center;
+  color: #ffffff;
+  border-color: rgb(97, 176, 246);
+}
+
+.form p {
+  font-family: Sofia Pro;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-left: 50px;
+  padding-left: 0px;
+}
+.form a{
+    color:#2EC4B6;
+}
+.logo {
+  text-align: center; /* Center-align the text content */
+}
+.logo h1 {
+  font-family: Brown;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  letter-spacing: -0.800000011920929px;
+  text-align: center;
+}
+.logo p {
+  font-family: Brown;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0px;
+  text-align: center;
+  color: #737373;
+}
+.logo img {
+  width: 77.33px;
+  height: 80px;
+  top: 205px;
+  left: 140px;
+  box-shadow: 0px 0px 0px 0px #0000001a;
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .form-group {
+        width: calc(50% - 5px); /* 50% width for medium-sized screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
+.form-group date-input-containerr i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .form-group {
+        width: 100%; /* Full width for smaller screens */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .form {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}
